@@ -23,8 +23,8 @@ im.save("captcha.png")
 img=cv2.imread("captcha.png")
 result=pytesseract.image_to_string(img)
 print(result)
-username="AP21110010091"
-password="Saiguptha@2003"
+username="username"  #enter username
+password="password"  #enter password
 input_username=driver.find_element(By.ID,"UserName")
 input_password=driver.find_element(By.ID,"AuthKey")
 input_captcha=driver.find_element(By.ID,"ccode")
